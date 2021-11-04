@@ -456,4 +456,5 @@ if __name__=="__main__":
 			exit(f"[{merah}×{putih}] TOKEN INVALID [{merah}×{putih}]")
 	except KeyError:
 		os.system('rm -rf save')
-		exit(f"[{merah}×{putih}] TOKEN INVALID [{merah}×{putih}]")
+		exit(r"[{merah}×{putih}] TOKEN INVALID [{merah}×{putih}]")
+                
