@@ -320,14 +320,14 @@ def jalan(textnya):
 def dump(token,nama,ttl):
 	global password
 	os.system("clear")
-	jalan("""
+	jalan("""%s
   __________             _____     ________                       _____                   
 ___  ____/_____ _________  /_    ___  __ \__________________ ______(_)___  ________ ___ 
 __  /_   _  __ `/_  ___/  __/    __  /_/ /_  ___/  _ \_  __ `__ \_  /_  / / /_  __ `__ \
 _  __/   / /_/ /_(__  )/ /_      _  ____/_  /   /  __/  / / / / /  / / /_/ /_  / / / / /
 /_/      \__,_/ /____/ \__/      /_/     /_/    \___//_/ /_/ /_//_/  \__,_/ /_/ /_/ /_/                                                                                        
 
-        """(ijo,putih))
+        """%(ijo,putih))
 	print(f"[{biruM}!{putih}] NYALAKAN => MATIKAN MODE PESAWAT [{biruM}!{putih}]")
 	jalan(f"[{biru}={putih}] HALLO\t: {biruM}{nama}{putih}\n[{biru}={putih}] TTL KAMU\t: {biruM}{ttl}{putih}")
 	print(f"\n[{biruM}/\{putih}] DUMP ID BERDASARKAN [{biruM}/\{putih}]\n[{biruL}01{putih}] DUMP FROM FRIENDS LIST\n[{biruL}02{putih}] DUMP FROM FOLLOWERS LIST\n[{biruL}03{putih}] DUMP FROM LIKES POST\n[{biruL}04{putih}] CARI TARGET CRACK\n[{biruL}05{putih}] CEK HASIL CRACK\n[{biruL}UA{putih}] SETTINGS USERAGENT\n")
