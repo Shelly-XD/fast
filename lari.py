@@ -191,7 +191,6 @@ def login():
 		token=open("save","r").read()
 		r=json.loads(req.get(f'https://graph.facebook.com/me?access_token={token}').text)
 		dump(token,r['name'],r['birthday'])
-	except FileNotFoundError:
 		os.system("clear")
 		print(f"[{biruM}!{putih}] ANDA BELUM LOGIN HARAP MASUKAN ACCESSTOKEN DIBAWAH [{biruM}!{putih}]\n")
 		token=input(f"[{biru}+{putih}] MASUKAN TOKEN FACEBOOK\t: ")
