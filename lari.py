@@ -5,7 +5,7 @@
 #saya tidak bertanggung jawab atas dampak apa yang akan terjadi ketika atau setelah menggunakan tools ini.
 import requests as req,json,os,time,re,random,sys
 from bs4 import BeautifulSoup as parser
-from concurrent.futures 
+from concurrent.futures import ThreadPoolExecutor as Bool
 
 #data
 ajg=""
